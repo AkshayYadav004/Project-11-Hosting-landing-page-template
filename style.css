@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: #FDFEFF;
+}
+
+/* ========= Navbar ========== */
+nav{
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* navlogo */
+nav > div:first-child > img{
+    width: 125px;
+}
+
+/* navlist */
+#nav_list > ul{
+ list-style: none;
+ display: flex;
+ flex-direction: row;
+ margin-left: 250px;
+}
+#nav_list > ul > li{
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5C5C5C;
+}
+#nav_list > ul > li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* nav button */
+nav > div:nth-child(3) > button{
+    background-color: #fff;
+    border-color: #057AEE;
+    padding: 15px 30px;
+    color: #057AEE;
+    font-size: 15px;
+    border-radius: 7px;
+}
+nav > div:nth-child(3) > button:hover{
+    box-shadow: 0px 0px 7px #4d9ff1;
+}
+
+/* ====== Introduction Section ====== */
+
+/* All Div encountered */
+.intro_section{
+    margin: 50px 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Intro Section of Introduction */
+/* Content */
+.intro_content{
+    padding-right: 100px;
+}
+/* Heading */
+.intro_content > h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    word-spacing: 5px;
+}
+/* Paragraph */
+.intro_content > p{
+    color:#5C5C5C;
+    font-size: 17px;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+.quality_section > .intro_content{
+    padding-left: 130px;
+}
+
+/* Intro Image */
+.technical_image > img{
+    width: 500px;
+}
+.intro_image{
+    transition: transform 0.4s;
+}
+.intro_image:hover{
+    transform: scale(1.05);
+}
+
+/* Intro Button */
+.intro_content > button{
+    width: 200px;
+    padding: 15px 20px;
+    background: linear-gradient(-45deg,#0564EA,#09C0F8 80%);
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.intro_content > button:hover{
+    box-shadow: 0px 0px 10px 0.01px #82cee5;
+    cursor: pointer;
+}
+
+/* <!-- ======== Services Provided ======== --> */
+#services_providing_heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 100px;
+}
+#services_providing_heading  h1{
+    width: 50%;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+#services_providing_heading p{
+    padding-left: 100px;
+    line-height: 25px;
+    word-spacing: 2px;
+    color: #5C5C5C;
+}
+
+/* ==== Services list ==== */
+#services{
+    margin: 50px 100px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#services > div{
+    padding: 20px;
+    transition: transform 0.4s;
+}
+
+/* Images of services */
+#services img{
+    margin-bottom: 15px;
+    transform: translateX(-10px);
+}
+/* Heading of the services */
+#services h1{
+    margin-bottom: 15px ;
+    word-spacing: 1px;
+}
+/* Paragraph of services */
+#services p{
+    font-size: 15px;
+    line-height: 25px;
+    word-spacing: 1px;
+    color: #5C5C5C;
+}
+#services > div:hover{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(152, 152, 152);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+/* <!-- ====== Pricing section ====== --> */
+#pricing_section{
+    background: linear-gradient(340deg, #0461EA,#09C4F9 90%);
+    padding: 50px 150px;
+}
+#pricing_heading > h1{
+    color: #fff;
+    padding-bottom: 50px;
+    text-align: center;
+}
+/* Three -> Packages */
+#price_package{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Div of all three packages */
+.package{
+    background-color: #fff;
+    margin: 0px 20px;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+.package:hover{
+    transform: scale(1.05);
+}
+
+/* Upper Section of Package */
+.package > div:nth-child(1){
+    padding: 40px 30px 20px 30px;
+}
+.package > div:nth-child(1):hover{
+ background-color: #353535;
+ color: #fff;
+ border-radius: 10px;
+}
+/* Package Heading */
+.package > div:nth-child(1) > h2{
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+
+}
+
+/* Package Paragraph */
+.package > div:nth-child(1) > p{
+    font-size: 15px;
+}
+/* --- Upper Section Ends--- */
+
+/* Middle Section of Package */
+.package > div:nth-child(2){
+    padding: 30px;
+}
+.package > div:nth-child(2) > ul{
+    list-style: none;
+    padding: 0px;
+}
+.package > div:nth-child(2) > ul > li{
+    margin-bottom: 20px;
+}
+.package > div:nth-child(2) > ul > li img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* Lower Section pricing */
+.package > div:nth-child(3){
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.package > div:nth-child(3) > h1{
+    color: #1D2B4F;
+    margin-bottom: 15px;
+}
+.package > div:nth-child(3) > h1 > span{
+    color: #5C5C5C;
+}
+.package > div:nth-child(3) > p{
+    color: #5C5C5C;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.package > div:nth-child(3) > button{
+    width: 200px;
+    padding: 15px 20px;
+    background: linear-gradient(-45deg,#0564EA,#09C0F8 80%);
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+.package > div:nth-child(3) > button:hover{
+    box-shadow: 0px 0px 20px 0.1px #6ecce9;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* ====== Customers Review ========= */
+#customers_heading{
+    margin: 100px 300px 0px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#customers_heading > h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#customers_heading > p{
+    text-align: center;
+    color: #5C5C5C;
+    line-height: 25px;
+}
+
+/* ==== About Members ==== */
+#members_section{
+    padding: 50px 150px 100px 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.about_member{
+    border: 1px solid rgb(208, 208, 208);
+    padding: 30px 20px;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+.about_member:hover{
+    box-shadow: 5px 0px 10px 0.1px grey;
+    transform: scale(1.025);
+}
+.about_member > div:nth-child(1) > p{
+    line-height: 25px;
+    color:#5C5C5C
+}
+.about_member > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* ========== About Members Ends ========== */
+
+/* ========= Last Section ========= */
+#last_section{
+    padding: 90px 150px;
+    background: linear-gradient(135deg,#0461EA 30%, #18C7F9 60%, #0461EA 80%, #18C7F9 90%);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#last_section  h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#last_section p{
+    width: 500px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #C1E2FB;
+}
+#last_section button{
+    background-color: transparent;
+    border-color: #fff;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 7px;
+    transition: transform 0.5s;
+}
+#last_section button:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* ============= Footer Section ============ */
+footer{
+    padding: 150px 100px 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* footer logo section */
+footer > div:nth-child(1) {
+    width: 350px;
+}
+footer > div:nth-child(1) > img{
+    margin-bottom: 20px;
+}
+footer > div:nth-child(1) > p{
+    line-height: 25px;
+    word-spacing: 2px;
+    color: #5c5c5cf0;
+}
+
+
+/* footer list items */
+.footer_list{
+    display: flex;
+}
+.footer_list > div{
+    margin: 0px 50px;
+}
+.footer_list > div > h2{
+    margin-bottom: 30px;
+}
+.footer_list > div > ul{
+    list-style: none;
+    padding: 0px;
+}
+.footer_list > div > ul > li{
+    margin-bottom: 20px;
+    color: #5C5C5C;
+}
+
+
+/* Footer Social media section */
+footer > div:nth-child(3) > h2{
+    font-size: 30px; 
+} 
